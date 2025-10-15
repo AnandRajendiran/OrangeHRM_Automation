@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-14T11:36:28 IST" name="Default suite" finished-at="2025-10-14T11:37:04 IST" duration-ms="35927">
+    <groups>
+    </groups>
+    <test started-at="2025-10-14T11:36:28 IST" name="Default test" finished-at="2025-10-14T11:37:04 IST" duration-ms="35927">
+      <class name="testCases.TestCaseProfile">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCaseProfile@64e7619d]" started-at="2025-10-14T11:36:29 IST" name="setup" finished-at="2025-10-14T11:36:34 IST" duration-ms="5359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="Beforemethod()[pri:0, instance:testCases.TestCaseProfile@64e7619d]" started-at="2025-10-14T11:36:34 IST" name="Beforemethod" finished-at="2025-10-14T11:36:43 IST" duration-ms="9148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Beforemethod -->
+        <test-method signature="ProfilePage()[pri:0, instance:testCases.TestCaseProfile@64e7619d]" started-at="2025-10-14T11:36:43 IST" name="ProfilePage" finished-at="2025-10-14T11:37:04 IST" duration-ms="20534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProfilePage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCaseProfile@64e7619d]" started-at="2025-10-14T11:37:04 IST" name="teardown" finished-at="2025-10-14T11:37:04 IST" duration-ms="497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TestCaseProfile -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
