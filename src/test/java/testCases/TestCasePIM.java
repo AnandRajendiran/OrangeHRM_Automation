@@ -37,6 +37,7 @@ public class TestCasePIM extends BaseClass{
 	public void SearchEmployee() throws InterruptedException
 	{
 		PIMPage PP = new PIMPage(driver);
+		Thread.sleep(3000);
 		PP.Click_EmployeeListSection();
 		PP.SearchWithEmployeeName(name);
 		Thread.sleep(3000);
