@@ -1,29 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="10" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-14T11:36:28 IST" name="Default suite" finished-at="2025-10-14T11:37:04 IST" duration-ms="35927">
+  <suite started-at="2025-10-16T12:18:49 IST" name="Suite" finished-at="2025-10-16T12:21:19 IST" duration-ms="149208">
     <groups>
     </groups>
-    <test started-at="2025-10-14T11:36:28 IST" name="Default test" finished-at="2025-10-14T11:37:04 IST" duration-ms="35927">
-      <class name="testCases.TestCaseProfile">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCaseProfile@64e7619d]" started-at="2025-10-14T11:36:29 IST" name="setup" finished-at="2025-10-14T11:36:34 IST" duration-ms="5359" status="PASS">
+    <test started-at="2025-10-16T12:18:49 IST" name="Test" finished-at="2025-10-16T12:21:19 IST" duration-ms="149208">
+      <class name="testCases.TestCaseLogin">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCaseLogin@4bd31064]" started-at="2025-10-16T12:19:48 IST" name="setup" finished-at="2025-10-16T12:19:52 IST" duration-ms="3937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="Beforemethod()[pri:0, instance:testCases.TestCaseProfile@64e7619d]" started-at="2025-10-14T11:36:34 IST" name="Beforemethod" finished-at="2025-10-14T11:36:43 IST" duration-ms="9148" status="PASS">
+        <test-method signature="login_With_Valid_Creadtial()[pri:1, instance:testCases.TestCaseLogin@4bd31064]" started-at="2025-10-16T12:19:52 IST" name="login_With_Valid_Creadtial" finished-at="2025-10-16T12:19:56 IST" duration-ms="4316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_With_Valid_Creadtial -->
+        <test-method signature="login_With_InValid_Credential_in_Password()[pri:2, instance:testCases.TestCaseLogin@4bd31064]" started-at="2025-10-16T12:19:56 IST" name="login_With_InValid_Credential_in_Password" finished-at="2025-10-16T12:19:58 IST" duration-ms="1936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_With_InValid_Credential_in_Password -->
+        <test-method signature="login_With_InValid_Credential_in_username()[pri:3, instance:testCases.TestCaseLogin@4bd31064]" started-at="2025-10-16T12:19:58 IST" name="login_With_InValid_Credential_in_username" finished-at="2025-10-16T12:19:59 IST" duration-ms="1300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_With_InValid_Credential_in_username -->
+        <test-method signature="BrandLogo()[pri:5, instance:testCases.TestCaseLogin@4bd31064]" started-at="2025-10-16T12:19:59 IST" name="BrandLogo" finished-at="2025-10-16T12:19:59 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrandLogo -->
+        <test-method signature="ForgotPassword()[pri:6, instance:testCases.TestCaseLogin@4bd31064]" started-at="2025-10-16T12:19:59 IST" name="ForgotPassword" finished-at="2025-10-16T12:20:00 IST" duration-ms="1347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgotPassword -->
+        <test-method signature="Resetpassword()[pri:7, instance:testCases.TestCaseLogin@4bd31064]" started-at="2025-10-16T12:20:01 IST" name="Resetpassword" finished-at="2025-10-16T12:20:02 IST" duration-ms="1421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Resetpassword -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCaseLogin@4bd31064]" started-at="2025-10-16T12:20:02 IST" name="teardown" finished-at="2025-10-16T12:20:02 IST" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TestCaseLogin -->
+      <class name="testCases.TestCasePIM">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCasePIM@6736fa8d]" started-at="2025-10-16T12:18:50 IST" name="setup" finished-at="2025-10-16T12:18:59 IST" duration-ms="9414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AddEmployee()[pri:0, instance:testCases.TestCasePIM@6736fa8d]" started-at="2025-10-16T12:18:59 IST" name="AddEmployee" finished-at="2025-10-16T12:19:10 IST" duration-ms="10525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddEmployee -->
+        <test-method signature="DeleteEmployeeRecord()[pri:2, instance:testCases.TestCasePIM@6736fa8d]" started-at="2025-10-16T12:19:10 IST" name="DeleteEmployeeRecord" finished-at="2025-10-16T12:19:18 IST" duration-ms="8857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteEmployeeRecord -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCasePIM@6736fa8d]" started-at="2025-10-16T12:19:18 IST" name="teardown" finished-at="2025-10-16T12:19:19 IST" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TestCasePIM -->
+      <class name="testCases.TestCaseProfile">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCaseProfile@4d518b32]" started-at="2025-10-16T12:19:19 IST" name="setup" finished-at="2025-10-16T12:19:23 IST" duration-ms="4514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="Beforemethod()[pri:0, instance:testCases.TestCaseProfile@4d518b32]" started-at="2025-10-16T12:19:23 IST" name="Beforemethod" finished-at="2025-10-16T12:19:32 IST" duration-ms="8251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Beforemethod -->
-        <test-method signature="ProfilePage()[pri:0, instance:testCases.TestCaseProfile@64e7619d]" started-at="2025-10-14T11:36:43 IST" name="ProfilePage" finished-at="2025-10-14T11:37:04 IST" duration-ms="20534" status="PASS">
+        <test-method signature="ProfilePage()[pri:0, instance:testCases.TestCaseProfile@4d518b32]" started-at="2025-10-16T12:19:32 IST" name="ProfilePage" finished-at="2025-10-16T12:19:47 IST" duration-ms="15605" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <i data-v-bddebfba="" data-v-67d2aedf="" class="oxd-icon bi-caret-down-fill oxd-select-text--arrow"></i> is not clickable at point (813, 82). Other element would receive the click: <ul data-v-5327b38a="">...</ul>
+  (Session info: chrome=141.0.7390.56)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e6db83f0daec01897eed239dcc48f93, clickElement {id=f.7C1CEDA66F8AACCDBCCDBFDD22E13231.d.6D1A3B8F5220B4F55A6FCDCD9F6E0B84.e.113}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.56, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\Anand\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49882}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49882/devtoo..., se:cdpVersion: 141.0.7390.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9e6db83f0daec01897eed239dcc48f93)] -> xpath: //i[@class='oxd-icon bi-caret-down-fill oxd-select-text--arrow'][1]]
+Session ID: 9e6db83f0daec01897eed239dcc48f93]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i data-v-bddebfba="" data-v-67d2aedf="" class="oxd-icon bi-caret-down-fill oxd-select-text--arrow"></i> is not clickable at point (813, 82). Other element would receive the click: <ul data-v-5327b38a="">...</ul>
+  (Session info: chrome=141.0.7390.56)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e6db83f0daec01897eed239dcc48f93, clickElement {id=f.7C1CEDA66F8AACCDBCCDBFDD22E13231.d.6D1A3B8F5220B4F55A6FCDCD9F6E0B84.e.113}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.56, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\Anand\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49882}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49882/devtoo..., se:cdpVersion: 141.0.7390.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9e6db83f0daec01897eed239dcc48f93)] -> xpath: //i[@class='oxd-icon bi-caret-down-fill oxd-select-text--arrow'][1]]
+Session ID: 9e6db83f0daec01897eed239dcc48f93
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+at pageObjects.ProfilePage.Nationality(ProfilePage.java:107)
+at testCases.TestCaseProfile.ProfilePage(TestCaseProfile.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProfilePage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCaseProfile@64e7619d]" started-at="2025-10-14T11:37:04 IST" name="teardown" finished-at="2025-10-14T11:37:04 IST" duration-ms="497" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCaseProfile@4d518b32]" started-at="2025-10-16T12:19:47 IST" name="teardown" finished-at="2025-10-16T12:19:48 IST" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TestCaseProfile -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="testCases.TestCaseHomepage">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCaseHomepage@e3c0e40]" started-at="2025-10-16T12:20:02 IST" name="setup" finished-at="2025-10-16T12:20:06 IST" duration-ms="3786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="HomeScreenProfile()[pri:1, instance:testCases.TestCaseHomepage@e3c0e40]" started-at="2025-10-16T12:20:06 IST" name="HomeScreenProfile" finished-at="2025-10-16T12:20:14 IST" duration-ms="8391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeScreenProfile -->
+        <test-method signature="validattionOfSearchbox()[pri:2, instance:testCases.TestCaseHomepage@e3c0e40]" started-at="2025-10-16T12:20:14 IST" name="validattionOfSearchbox" finished-at="2025-10-16T12:21:18 IST" duration-ms="63840" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validattionOfSearchbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCaseHomepage@e3c0e40]" started-at="2025-10-16T12:21:18 IST" name="teardown" finished-at="2025-10-16T12:21:19 IST" duration-ms="326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TestCaseHomepage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
