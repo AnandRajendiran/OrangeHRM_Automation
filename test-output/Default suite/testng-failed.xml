@@ -5,8 +5,8 @@
     <classes>
       <class name="testCases.TestCaseProfile">
         <methods>
-          <include name="ProfilePage"/>
           <include name="Beforemethod"/>
+          <include name="ProfilePage"/>
           <include name="setup"/>
           <include name="teardown"/>
         </methods>

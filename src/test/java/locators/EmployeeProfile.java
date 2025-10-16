@@ -10,13 +10,13 @@ public class EmployeeProfile {
 	//@FindBy(xpath = "(//input[@class=\"oxd-input oxd-input--active\"])[2]")
 	//public WebElement NickName;
 	
-	@FindBy(xpath ="//label[text()='Other Id']/following::input[1]")
+	@FindBy(xpath ="(//label[@class='oxd-label'])[2]//following::input[1]")
 	public WebElement OtherID;
 	
-	@FindBy(xpath ="//label[text()=\"Driver's License Number\"]//following::input[1]")
+	@FindBy(xpath ="(//label[@class='oxd-label'])[3]//following::input[1]")
 	public WebElement DL;
 	
-	@FindBy(xpath = "(//i[@class ='oxd-icon bi-calendar oxd-date-input-icon'])[1]")
+	@FindBy(xpath = "(//label[@class='oxd-label'])[4]//following::i[@class='oxd-icon bi-calendar oxd-date-input-icon'][1]")
 	public WebElement ExpireDate;
 	
 //	@FindBy(xpath ="(//input[@class='oxd-input oxd-input--active'])[7]")
@@ -25,13 +25,13 @@ public class EmployeeProfile {
 //	@FindBy(xpath ="(//input[@class='oxd-input oxd-input--active'])[8]")
 //	public WebElement SINNumber;
 	
-	@FindBy(xpath ="//i[@class='oxd-icon bi-caret-down-fill oxd-select-text--arrow'][1]")
+	@FindBy(xpath ="(//label[@class='oxd-label'])[5]//following::i[@class='oxd-icon bi-caret-down-fill oxd-select-text--arrow'][1]")
 	public WebElement Nationality;
 	
-	@FindBy(xpath ="(//i[@class='oxd-icon bi-caret-down-fill oxd-select-text--arrow'])[2]")
+	@FindBy(xpath ="(//label[@class='oxd-label'])[5]//following::i[@class='oxd-icon bi-caret-down-fill oxd-select-text--arrow'][2]")
 	public WebElement MartialStatus;
 	
-	@FindBy(xpath = "(//i[@class ='oxd-icon bi-calendar oxd-date-input-icon'])[2]")
+	@FindBy(xpath = "(//label[@class='oxd-label'])[5]//following::i[@class='oxd-icon bi-calendar oxd-date-input-icon'][1]")
 	public WebElement DOB;
 	
 	@FindBy(xpath ="//label[normalize-space()='Male']")
@@ -49,7 +49,7 @@ public class EmployeeProfile {
 	@FindBy(xpath ="(//button[@type ='submit'])[1]")
 	public WebElement EmployeedetailsSaveBtn;
 	
-	@FindBy(xpath = "(//i[@class ='oxd-icon bi-caret-down-fill oxd-select-text--arrow'])[3]")
+	@FindBy(xpath = "(//label[@class='oxd-label'])[5]//following::i[@class='oxd-icon bi-caret-down-fill oxd-select-text--arrow'][3]")
 	public WebElement BloodType;
 	
 	@FindBy(xpath ="//label[text()='Test_Field']//following::input[1]")
