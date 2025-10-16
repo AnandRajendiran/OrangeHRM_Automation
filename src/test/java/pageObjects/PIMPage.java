@@ -1,18 +1,22 @@
 package pageObjects;
 
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import locators.PIMPageLocators;
 
 public class PIMPage extends Basepage {
 	
 	PIMPageLocators loc;
+	WebDriverWait wait;
 	
 	public PIMPage(WebDriver driver)
 	
@@ -20,11 +24,12 @@ public class PIMPage extends Basepage {
 		super(driver);
 		loc = new PIMPageLocators();		
 		PageFactory.initElements(driver, loc);
+		 wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
 	public void ClickAddRecord()
 	{
-		loc.ADD.click();
+		wait.until(ExpectedConditions.elementToBeClickable(loc.ADD)).click();
 	}
 		
 	public String FirstName(String Fname)
@@ -46,13 +51,13 @@ public class PIMPage extends Basepage {
 	
 	public void Click_Savebtn()
 	{
-		loc.Savebtn.click();
-		
+	
+		wait.until(ExpectedConditions.elementToBeClickable(loc.Savebtn)).click();
 	}
 	
 	public void Click_EmployeeListSection()
 	{
-		loc.Employeelist.click();
+		wait.until(ExpectedConditions.elementToBeClickable(loc.Employeelist)).click();
 	}
 	
 	public void SearchWithEmployeeName(String EName)
@@ -60,10 +65,9 @@ public class PIMPage extends Basepage {
 		loc.Searchemployeename.sendKeys(EName);
 	}
 	
-	public void ClickSearchButton() throws InterruptedException
+	public void ClickSearchButton() 
 	{
-		loc.Searchbtn.click();
-		Thread.sleep(2000);
+		wait.until(ExpectedConditions.elementToBeClickable(loc.Searchbtn)).click();
 	}
 	
 	public void DeleteRecord(String EmpID) throws InterruptedException
@@ -136,12 +140,12 @@ public class PIMPage extends Basepage {
 	
 	public void delete()
 	{
-		loc.Deletbtn.click();
+		wait.until(ExpectedConditions.elementToBeClickable(loc.Deletbtn)).click();
 	}
 	
 	public void confirmbtn()
 	{
-		loc.Confirmbtn.click();
+		wait.until(ExpectedConditions.elementToBeClickable(loc.Confirmbtn)).click();
 	}
 
 
