@@ -35,7 +35,7 @@ public class BaseClass {
         options.addArguments("--disable-infobars");
         options.addArguments("--start-maximized");
         
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(options);
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
@@ -53,6 +53,7 @@ public class BaseClass {
 	
 	public String capturescreen(String tname) throws IOException
 	{
+	
 		String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 		
 		TakesScreenshot takeScreenshot = (TakesScreenshot) driver;
@@ -62,8 +63,11 @@ public class BaseClass {
 		File targetfile = new File(targetfilepath);
 		
 		 FileUtils.copyFile(sourcefile, targetfile);
+		 System.out.println("Screenshot taken: " + tname);
+		 
+		 return targetfilepath;
 		
-		return targetfilepath;
+		
 	}
 	
 }

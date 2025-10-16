@@ -53,14 +53,16 @@ public class ExtendReportManger implements ITestListener {
 	
 	public void onTestFailure(ITestResult result)
 	{
-		test = extent.createTest(result.getMethod().getMethodName());
-		test.assignCategory(result.getMethod().getMethodName());
+		test = extent.createTest(result.getTestClass().getName());
+		test.assignCategory(result.getMethod().getRealClass().getSimpleName());
 		
 		test.log(Status.FAIL, result.getName()+ "Got failed");
 		try
 		{
 			String impath = new BaseClass().capturescreen(result.getName());
-			test.addScreenCaptureFromPath(impath);
+			 if (impath != null) {
+	                test.addScreenCaptureFromPath(impath);
+	            }
 			
 		}
 		catch(IOException e1)

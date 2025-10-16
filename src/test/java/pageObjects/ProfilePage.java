@@ -104,14 +104,16 @@ public class ProfilePage extends Basepage {
 	
 	public void Nationality(String Nation)
 	{
-		loc.Nationality.click();
+		WebElement dropdown = loc.Nationality;
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", dropdown);
 		WebElement national = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@role = 'option' and normalize-space() = '"+Nation+"']")));
 		national.click();
 	}
 
 	public void MartialStatus(String Martial)
 	{
-		loc.MartialStatus.click();
+		WebElement dropdown = loc.MartialStatus;
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", dropdown);
 		WebElement martial = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@role = 'option' and normalize-space() = '"+Martial+"']")));
 		martial.click();
 	}
