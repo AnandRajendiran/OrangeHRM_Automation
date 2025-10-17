@@ -4,6 +4,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
 import locators.HomePageLocators;
@@ -11,6 +12,8 @@ import locators.HomePageLocators;
 public class Homepage extends Basepage {
 	
 	HomePageLocators loc;
+	
+	public WebDriver driver;
 
 	public Homepage(WebDriver driver)
 	{
@@ -22,27 +25,27 @@ public class Homepage extends Basepage {
 	
 	public void Clickprofile()
 	{
-		loc.profile.click();
+		wait.until(ExpectedConditions.elementToBeClickable(loc.profile)).click();
 	}
 	
 	public void Clicklogout()
 	{
-		loc.Logout.click();
+		wait.until(ExpectedConditions.elementToBeClickable(loc.Logout)).click();
 	}
 	
 	public void ClickAbout()
 	{
-		loc.About.click();
+		wait.until(ExpectedConditions.elementToBeClickable(loc.About)).click();
 	}
 	
 	public void ClickSupport()
 	{
-		loc.Support.click();
+		wait.until(ExpectedConditions.elementToBeClickable(loc.Support)).click();
 	}
 	
 	public void ClickChange_passowrd()
 	{
-		loc.ChangePassword.click();
+		wait.until(ExpectedConditions.elementToBeClickable(loc.ChangePassword)).click();
 	}
 	
 	public WebElement searchwait()
@@ -51,7 +54,7 @@ public class Homepage extends Basepage {
 	}
 	public void Search(String SectionName) throws InterruptedException
 	{
-		loc.Search.click();
+		wait.until(ExpectedConditions.elementToBeClickable(loc.Search)).click();
 		loc.Search.sendKeys(SectionName);
 		loc.Search.sendKeys(Keys.CONTROL + "a");
 	    loc.Search.sendKeys(Keys.DELETE);
@@ -60,20 +63,20 @@ public class Homepage extends Basepage {
 	
 	public void Validate_AdminSection()
 	{
-		loc.Admin.click();
+		wait.until(ExpectedConditions.elementToBeClickable(loc.Admin)).click();
 		String Header = loc.AdminPageHeader.getText();
 		Assert.assertEquals(Header,"Admin/User Management");
 	}
 	
 	public void Validate_PIMSection()
 	{
-		loc.PIM.click();
+		wait.until(ExpectedConditions.elementToBeClickable(loc.PIM)).click();
 		String Header = loc.PIMHeader.getText();
 		Assert.assertEquals(Header,"PIM");
 	}
 	
 	public void ClickAbout_close()
 	{
-		loc.AboutClosebtn.click();
+		wait.until(ExpectedConditions.elementToBeClickable(loc.AboutClosebtn)).click();
 	}
 }

@@ -16,13 +16,15 @@ import locators.EmployeeProfile;
 public class ProfilePage extends Basepage {
 	
 	EmployeeProfile loc;
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebDriverWait wait;
 	
 	public ProfilePage(WebDriver driver)
 	{
 		super(driver);
 		loc = new EmployeeProfile();
 		PageFactory.initElements(driver, loc);
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
 	}
 	
 	
@@ -73,7 +75,9 @@ public class ProfilePage extends Basepage {
 	
 	public void EmployeDetailsSaveBtn()
 	{
-		wait.until(ExpectedConditions.elementToBeClickable(loc.EmployeedetailsSaveBtn));
+		WebElement save = loc.EmployeedetailsSaveBtn;
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center', inline: 'nearest'})", save);
+		wait.until(ExpectedConditions.elementToBeClickable(save)).click();
 	}
 	
 	public void Testfield(String rndm)
@@ -104,18 +108,22 @@ public class ProfilePage extends Basepage {
 	
 	public void Nationality(String Nation)
 	{
-		WebElement dropdown = loc.Nationality;
-		((JavascriptExecutor) driver).executeScript("arguments[0].click();", dropdown);
+		WebElement Nationality = loc.Nationality;
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});", Nationality);
+		wait.until(ExpectedConditions.elementToBeClickable(Nationality)).click();
 		WebElement national = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@role = 'option' and normalize-space() = '"+Nation+"']")));
-		national.click();
+		wait.until(ExpectedConditions.elementToBeClickable(national)).click();
+
 	}
 
 	public void MartialStatus(String Martial)
 	{
-		WebElement dropdown = loc.MartialStatus;
-		((JavascriptExecutor) driver).executeScript("arguments[0].click();", dropdown);
+		WebElement MartialS = loc.MartialStatus;
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});", MartialS);
+		wait.until(ExpectedConditions.elementToBeClickable(MartialS)).click();
 		WebElement martial = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@role = 'option' and normalize-space() = '"+Martial+"']")));
-		martial.click();
+		wait.until(ExpectedConditions.elementToBeClickable(martial)).click();
+
 	}
 	
 	public void DOB(String Year, String Date,String Month ) throws InterruptedException

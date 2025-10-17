@@ -15,13 +15,13 @@ public class TestCaseProfile extends BaseClass{
 	@BeforeMethod						// i want to use beforeclass annotation if i have multiple Testcases.
 	public void Beforemethod() throws InterruptedException
 	{
-		LoginPage LP = new LoginPage(getDriver());
+		LoginPage LP = new LoginPage(driver);
 		LP.Username("admin");
 		LP.Password("admin123");
 		LP.LoginClick();
-		Homepage HP = new Homepage(getDriver());
+		Homepage HP = new Homepage(driver);
 		HP.Validate_PIMSection();
-		PIMPage PP = new PIMPage(getDriver());
+		PIMPage PP = new PIMPage(driver);
 		PP.ClickAddRecord();
 		PP.FirstName("anand");
 		PP.MiddleName("dude");
@@ -36,7 +36,7 @@ public class TestCaseProfile extends BaseClass{
 	public void ProfilePage() throws InterruptedException
 	{
 	
-		ProfilePage Pp = new ProfilePage(getDriver());
+		ProfilePage Pp = new ProfilePage(driver);
 		Thread.sleep(5000);
 		Pp.OtherID("None");
 		Pp.DL("Tn1123145");

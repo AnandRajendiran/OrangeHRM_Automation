@@ -12,26 +12,17 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
-
 	
-	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-
-	public WebDriver getDriver()
-	{
-		return driver.get();	}
-	
+	public static WebDriver driver;
 	// ✅ Common wait timeout (you can adjust globally)
-    private static final int EXPLICIT_WAIT_TIMEOUT = 15;
-    private static final int IMPLICIT_WAIT_TIMEOUT = 10;
+    public static final int EXPLICIT_WAIT_TIMEOUT = 15;
+    public static final int IMPLICIT_WAIT_TIMEOUT = 10;
 	
 	@BeforeClass
 	public void setup()
@@ -47,33 +38,30 @@ public class BaseClass {
         options.addArguments("--disable-infobars");
         options.addArguments("--start-maximized");
         
-		WebDriver localdriver = new ChromeDriver(options);
-		driver.set(localdriver);
-		getDriver().manage().deleteAllCookies();
-        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICIT_WAIT_TIMEOUT));
-        getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-        getDriver().manage().window().maximize();
+        driver = new ChromeDriver(options);
+   
+        driver.manage().deleteAllCookies();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICIT_WAIT_TIMEOUT));
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        driver.manage().window().maximize();
 	}
 	
 	@AfterClass
 	public void teardown() 
 	{
-		 if (getDriver() != null) {
-	            getDriver().quit();
-	            driver.remove();
+
+		 if (driver != null) {
+			 driver.quit();
 	        }
 	}
 	
-	 public WebDriverWait getwait() {
-	        return new WebDriverWait(getDriver(), Duration.ofSeconds(EXPLICIT_WAIT_TIMEOUT));
-	    }
 	
 	public String capturescreen(String tname) throws IOException
 	{
 	
 		String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 		
-		TakesScreenshot takeScreenshot = (TakesScreenshot) getDriver();
+		TakesScreenshot takeScreenshot = (TakesScreenshot) driver;
 		File sourcefile = takeScreenshot.getScreenshotAs(OutputType.FILE);
 		
 		String targetfilepath = System.getProperty("user.dir")+"\\Screenshots\\" +tname +"_"+ timestamp + ".png";

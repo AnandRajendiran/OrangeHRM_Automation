@@ -17,17 +17,17 @@ import pageObjects.ResetPasswordPage;
 @Listeners(utilities.ExtendReportManger.class)
 public class TestCaseLogin extends BaseClass{
 	
-	WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		
 	@Test(priority = 1)
 	public void login_With_Valid_Creadtial() 
 	{
-		LoginPage LP = new LoginPage(getDriver());
+		LoginPage LP = new LoginPage(driver);
 		LP.Username("Admin");
 		LP.Password("admin123");
 		LP.LoginClick();
 		
-		Homepage HP = new Homepage(getDriver());
+		Homepage HP = new Homepage(driver);
 		HP.Clickprofile();
 		HP.Clicklogout();
 			
@@ -36,7 +36,7 @@ public class TestCaseLogin extends BaseClass{
 	@Test(priority = 2)
 	public void login_With_InValid_Credential_in_Password()
 	{
-		LoginPage LP = new LoginPage(getDriver());
+		LoginPage LP = new LoginPage(driver);
 		LP.Username("Admin");
 		LP.Password("admin1234");
 		LP.LoginClick();
@@ -48,7 +48,7 @@ public class TestCaseLogin extends BaseClass{
 	@Test(priority = 3)
 	public void login_With_InValid_Credential_in_username()
 	{
-		LoginPage LP = new LoginPage(getDriver());
+		LoginPage LP = new LoginPage(driver);
 		LP.Username("dude");
 		LP.Password("admin123");
 		LP.LoginClick();
@@ -60,7 +60,7 @@ public class TestCaseLogin extends BaseClass{
 		    Assert.assertTrue(true);
 		} else {
 		    System.out.println("Unexpected behavior: Login succeeded, proceeding...");
-		    Homepage HP = new Homepage(getDriver());
+		    Homepage HP = new Homepage(driver);
 		    try {
 	            HP.Clickprofile();
 	            HP.Clicklogout();
@@ -74,7 +74,7 @@ public class TestCaseLogin extends BaseClass{
 	
 	public void Social_media_link()
 	{
-		LoginPage LP= new LoginPage(getDriver());
+		LoginPage LP= new LoginPage(driver);
 		LP.Linkdin_link();
 		LP.Facebook_link();
 		LP.Twitter_link();
@@ -85,7 +85,7 @@ public class TestCaseLogin extends BaseClass{
 	@Test(priority = 5)
 	public void BrandLogo()
 	{
-		LoginPage LP= new LoginPage(getDriver());
+		LoginPage LP= new LoginPage(driver);
 		LP.brandlogo();		
 		
 	}
@@ -93,9 +93,9 @@ public class TestCaseLogin extends BaseClass{
 	@Test(priority = 6)
 	public void ForgotPassword()
 	{
-		LoginPage LP= new LoginPage(getDriver());
+		LoginPage LP= new LoginPage(driver);
 		LP.forgot_password();
-		ResetPasswordPage RP= new ResetPasswordPage(getDriver());
+		ResetPasswordPage RP= new ResetPasswordPage(driver);
 		wait.until(ExpectedConditions.visibilityOf(RP.cancelButton()));
 		RP.Cancel();
 
@@ -105,9 +105,9 @@ public class TestCaseLogin extends BaseClass{
 	@Test(priority = 7)
 	public void Resetpassword()
 	{
-		LoginPage LP= new LoginPage(getDriver());
+		LoginPage LP= new LoginPage(driver);
 		LP.forgot_password();
-		ResetPasswordPage RP= new ResetPasswordPage(getDriver());
+		ResetPasswordPage RP= new ResetPasswordPage(driver);
 		 wait.until(ExpectedConditions.visibilityOf(RP.headerElement()));
 		RP.Header();
 		RP.Description();

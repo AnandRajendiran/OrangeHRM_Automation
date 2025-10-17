@@ -1,14 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="OrangeHRM_ParallelSuite" parallel="classes" thread-count="3">
 
-    <!-- Run all test classes in parallel -->
-    <test name="ParallelTestRun">
+<!-- 🔹 Suite name and parallel mode -->
+<suite name="OrangeHRM_ParallelSuite" parallel="tests" thread-count="4">
+
+    <!-- ✅ Test 1: Login Tests -->
+    <test name="LoginTests">
         <classes>
-            <class name="testCases.TestCaseLogin" />
-            <class name="testCases.TestCaseHomepage" />
-            <class name="testCases.TestCasePIM" />
-            <!-- <class name="testCases.TestCaseProfile" /> Uncomment if ready -->
+            <class name="testCases.TestCaseLogin"/>
+        </classes>
+    </test>
+
+    <!-- ✅ Test 2: Homepage Tests -->
+    <test name="HomepageTests">
+        <classes>
+            <class name="testCases.TestCaseHomepage"/>
+        </classes>
+    </test>
+
+    <!-- ✅ Test 3: PIM Tests -->
+    <test name="PIMTests">
+        <classes>
+            <class name="testCases.TestCasePIM"/>
+        </classes>
+    </test>
+
+    <!-- ✅ Test 4: Profile Tests -->
+    <test name="ProfileTests">
+        <classes>
+            <class name="testCases.TestCaseProfile"/>
         </classes>
     </test>
 

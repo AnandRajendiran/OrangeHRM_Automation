@@ -13,21 +13,22 @@ import pageObjects.LoginPage;
 @Listeners(utilities.ExtendReportManger.class)
 public class TestCaseHomepage extends BaseClass{
 	
-	 WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(5));
+	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 	
 	
 	@Test(priority =1)
 	public void HomeScreenProfile() throws InterruptedException
 	{
-		LoginPage LP = new LoginPage(getDriver());
+		LoginPage LP = new LoginPage(driver);
 		LP.Username("admin");
 		LP.Password("admin123");
 		LP.LoginClick();
 		
-		Homepage HP =new Homepage(getDriver());
+		Homepage HP =new Homepage(driver);
 		HP.Clickprofile();
 		HP.ClickAbout();
 		HP.ClickAbout_close();
+		HP.Clickprofile();
 		HP.ClickSupport();
 		HP.Clickprofile();
 		HP.ClickChange_passowrd();
@@ -39,12 +40,12 @@ public class TestCaseHomepage extends BaseClass{
 	@Test(priority =2)
 	public void validattionOfSearchbox() throws InterruptedException
 	{
-		LoginPage LP = new LoginPage(getDriver());
+		LoginPage LP = new LoginPage(driver);
 		LP.Username("admin");
 		LP.Password("admin123");
 		LP.LoginClick();
 		
-		Homepage HP =new Homepage(getDriver());
+		Homepage HP =new Homepage(driver);
 		String[]  SearchItems = {"admin","PIM","Leave","Time","Recruitment","My Info","Performance","Dashboard","Directory","Maintenance","Claim", "Buzz"};
 		
 		for(String items:SearchItems)

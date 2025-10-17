@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
 import locators.LoginLocators;
@@ -23,18 +24,19 @@ public class LoginPage extends Basepage{
 	
 	public void Username(String name)
 	{
-		loc.username.sendKeys(name);
+		WebElement user = wait.until(ExpectedConditions.visibilityOf(loc.username));
+		user.sendKeys(name);
 	}
 		
 	public void Password(String pwd)
 	{
-		loc.password.sendKeys(pwd);
+		wait.until(ExpectedConditions.visibilityOf(loc.password)).sendKeys(pwd);
 		
 	}
 	
 	public void LoginClick()
 	{
-		loc.Loginbtn.click();
+		wait.until(ExpectedConditions.elementToBeClickable(loc.Loginbtn)).click();;
 	}
 	
 	public void login(String username, String password)
