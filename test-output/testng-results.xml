@@ -2,100 +2,100 @@
 <testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-17T17:27:03 IST" name="OrangeHRM_ParallelSuite" finished-at="2025-10-17T17:29:06 IST" duration-ms="122999">
+  <suite started-at="2025-10-17T18:34:54 IST" name="OrangeHRM_ParallelSuite" finished-at="2025-10-17T18:37:07 IST" duration-ms="133363">
     <groups>
     </groups>
-    <test started-at="2025-10-17T17:27:03 IST" name="LoginTests" finished-at="2025-10-17T17:27:18 IST" duration-ms="14805">
+    <test started-at="2025-10-17T18:34:54 IST" name="LoginTests" finished-at="2025-10-17T18:35:11 IST" duration-ms="17661">
       <class name="testCases.TestCaseLogin">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T17:27:03 IST" name="setup" finished-at="2025-10-17T17:27:08 IST" duration-ms="4790" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T18:34:54 IST" name="setup" finished-at="2025-10-17T18:35:01 IST" duration-ms="6633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login_With_Valid_Creadtial()[pri:1, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T17:27:08 IST" name="login_With_Valid_Creadtial" finished-at="2025-10-17T17:27:12 IST" duration-ms="3694" status="PASS">
+        <test-method signature="login_With_Valid_Creadtial()[pri:1, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T18:35:01 IST" name="login_With_Valid_Creadtial" finished-at="2025-10-17T18:35:05 IST" duration-ms="4065" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_With_Valid_Creadtial -->
-        <test-method signature="login_With_InValid_Credential_in_Password()[pri:2, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T17:27:12 IST" name="login_With_InValid_Credential_in_Password" finished-at="2025-10-17T17:27:13 IST" duration-ms="1954" status="PASS">
+        <test-method signature="login_With_InValid_Credential_in_Password()[pri:2, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T18:35:05 IST" name="login_With_InValid_Credential_in_Password" finished-at="2025-10-17T18:35:07 IST" duration-ms="2128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_With_InValid_Credential_in_Password -->
-        <test-method signature="login_With_InValid_Credential_in_username()[pri:3, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T17:27:13 IST" name="login_With_InValid_Credential_in_username" finished-at="2025-10-17T17:27:15 IST" duration-ms="1280" status="PASS">
+        <test-method signature="login_With_InValid_Credential_in_username()[pri:3, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T18:35:07 IST" name="login_With_InValid_Credential_in_username" finished-at="2025-10-17T18:35:08 IST" duration-ms="1458" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_With_InValid_Credential_in_username -->
-        <test-method signature="BrandLogo()[pri:5, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T17:27:15 IST" name="BrandLogo" finished-at="2025-10-17T17:27:15 IST" duration-ms="28" status="PASS">
+        <test-method signature="BrandLogo()[pri:5, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T18:35:08 IST" name="BrandLogo" finished-at="2025-10-17T18:35:08 IST" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrandLogo -->
-        <test-method signature="ForgotPassword()[pri:6, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T17:27:15 IST" name="ForgotPassword" finished-at="2025-10-17T17:27:16 IST" duration-ms="1239" status="PASS">
+        <test-method signature="ForgotPassword()[pri:6, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T18:35:08 IST" name="ForgotPassword" finished-at="2025-10-17T18:35:10 IST" duration-ms="1363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ForgotPassword -->
-        <test-method signature="Resetpassword()[pri:7, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T17:27:16 IST" name="Resetpassword" finished-at="2025-10-17T17:27:17 IST" duration-ms="1207" status="PASS">
+        <test-method signature="Resetpassword()[pri:7, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T18:35:10 IST" name="Resetpassword" finished-at="2025-10-17T18:35:11 IST" duration-ms="1317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Resetpassword -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T17:27:17 IST" name="teardown" finished-at="2025-10-17T17:27:18 IST" duration-ms="276" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T18:35:11 IST" name="teardown" finished-at="2025-10-17T18:35:11 IST" duration-ms="325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TestCaseLogin -->
     </test> <!-- LoginTests -->
-    <test started-at="2025-10-17T17:27:18 IST" name="HomepageTests" finished-at="2025-10-17T17:28:12 IST" duration-ms="54106">
+    <test started-at="2025-10-17T18:35:13 IST" name="HomepageTests" finished-at="2025-10-17T18:36:11 IST" duration-ms="58237">
       <class name="testCases.TestCaseHomepage">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCaseHomepage@1984b1f]" started-at="2025-10-17T17:27:18 IST" name="setup" finished-at="2025-10-17T17:27:21 IST" duration-ms="3058" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCaseHomepage@1984b1f]" started-at="2025-10-17T18:35:13 IST" name="setup" finished-at="2025-10-17T18:35:18 IST" duration-ms="5319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="HomeScreenProfile()[pri:1, instance:testCases.TestCaseHomepage@1984b1f]" started-at="2025-10-17T17:27:21 IST" name="HomeScreenProfile" finished-at="2025-10-17T17:27:31 IST" duration-ms="10434" status="PASS">
+        <test-method signature="HomeScreenProfile()[pri:1, instance:testCases.TestCaseHomepage@1984b1f]" started-at="2025-10-17T18:35:18 IST" name="HomeScreenProfile" finished-at="2025-10-17T18:35:29 IST" duration-ms="10412" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomeScreenProfile -->
-        <test-method signature="validattionOfSearchbox()[pri:2, instance:testCases.TestCaseHomepage@1984b1f]" started-at="2025-10-17T17:27:31 IST" name="validattionOfSearchbox" finished-at="2025-10-17T17:28:12 IST" duration-ms="40337" status="PASS">
+        <test-method signature="validattionOfSearchbox()[pri:2, instance:testCases.TestCaseHomepage@1984b1f]" started-at="2025-10-17T18:35:29 IST" name="validattionOfSearchbox" finished-at="2025-10-17T18:36:11 IST" duration-ms="42212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validattionOfSearchbox -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCaseHomepage@1984b1f]" started-at="2025-10-17T17:28:12 IST" name="teardown" finished-at="2025-10-17T17:28:12 IST" duration-ms="271" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCaseHomepage@1984b1f]" started-at="2025-10-17T18:36:11 IST" name="teardown" finished-at="2025-10-17T18:36:11 IST" duration-ms="288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TestCaseHomepage -->
     </test> <!-- HomepageTests -->
-    <test started-at="2025-10-17T17:28:12 IST" name="PIMTests" finished-at="2025-10-17T17:28:33 IST" duration-ms="20694">
+    <test started-at="2025-10-17T18:36:11 IST" name="PIMTests" finished-at="2025-10-17T18:36:33 IST" duration-ms="22049">
       <class name="testCases.TestCasePIM">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCasePIM@3403e2ac]" started-at="2025-10-17T17:28:12 IST" name="setup" finished-at="2025-10-17T17:28:16 IST" duration-ms="3505" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCasePIM@3403e2ac]" started-at="2025-10-17T18:36:11 IST" name="setup" finished-at="2025-10-17T18:36:15 IST" duration-ms="3955" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="AddEmployee()[pri:0, instance:testCases.TestCasePIM@3403e2ac]" started-at="2025-10-17T17:28:16 IST" name="AddEmployee" finished-at="2025-10-17T17:28:23 IST" duration-ms="7932" status="PASS">
+        <test-method signature="AddEmployee()[pri:0, instance:testCases.TestCasePIM@3403e2ac]" started-at="2025-10-17T18:36:15 IST" name="AddEmployee" finished-at="2025-10-17T18:36:24 IST" duration-ms="8888" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddEmployee -->
-        <test-method signature="DeleteEmployeeRecord()[pri:2, instance:testCases.TestCasePIM@3403e2ac]" started-at="2025-10-17T17:28:23 IST" name="DeleteEmployeeRecord" finished-at="2025-10-17T17:28:32 IST" duration-ms="9003" status="PASS">
+        <test-method signature="DeleteEmployeeRecord()[pri:2, instance:testCases.TestCasePIM@3403e2ac]" started-at="2025-10-17T18:36:24 IST" name="DeleteEmployeeRecord" finished-at="2025-10-17T18:36:33 IST" duration-ms="8964" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteEmployeeRecord -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCasePIM@3403e2ac]" started-at="2025-10-17T17:28:32 IST" name="teardown" finished-at="2025-10-17T17:28:33 IST" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCasePIM@3403e2ac]" started-at="2025-10-17T18:36:33 IST" name="teardown" finished-at="2025-10-17T18:36:33 IST" duration-ms="236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TestCasePIM -->
     </test> <!-- PIMTests -->
-    <test started-at="2025-10-17T17:28:33 IST" name="ProfileTests" finished-at="2025-10-17T17:29:06 IST" duration-ms="32990">
+    <test started-at="2025-10-17T18:36:33 IST" name="ProfileTests" finished-at="2025-10-17T18:37:07 IST" duration-ms="33570">
       <class name="testCases.TestCaseProfile">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCaseProfile@49c66ade]" started-at="2025-10-17T17:28:33 IST" name="setup" finished-at="2025-10-17T17:28:36 IST" duration-ms="3532" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCaseProfile@49c66ade]" started-at="2025-10-17T18:36:33 IST" name="setup" finished-at="2025-10-17T18:36:37 IST" duration-ms="3542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="Beforemethod()[pri:0, instance:testCases.TestCaseProfile@49c66ade]" started-at="2025-10-17T17:28:36 IST" name="Beforemethod" finished-at="2025-10-17T17:28:45 IST" duration-ms="8491" status="PASS">
+        <test-method is-config="true" signature="Beforemethod()[pri:0, instance:testCases.TestCaseProfile@49c66ade]" started-at="2025-10-17T18:36:37 IST" name="Beforemethod" finished-at="2025-10-17T18:36:46 IST" duration-ms="8594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Beforemethod -->
-        <test-method signature="ProfilePage()[pri:0, instance:testCases.TestCaseProfile@49c66ade]" started-at="2025-10-17T17:28:45 IST" name="ProfilePage" finished-at="2025-10-17T17:29:06 IST" duration-ms="20735" status="PASS">
+        <test-method signature="ProfilePage()[pri:0, instance:testCases.TestCaseProfile@49c66ade]" started-at="2025-10-17T18:36:46 IST" name="ProfilePage" finished-at="2025-10-17T18:37:07 IST" duration-ms="21184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProfilePage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCaseProfile@49c66ade]" started-at="2025-10-17T17:29:06 IST" name="teardown" finished-at="2025-10-17T17:29:06 IST" duration-ms="226" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCaseProfile@49c66ade]" started-at="2025-10-17T18:37:07 IST" name="teardown" finished-at="2025-10-17T18:37:07 IST" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

@@ -1,5 +1,7 @@
 package utilities;
 
+import java.awt.Desktop;
+import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -26,12 +28,13 @@ public class ExtendReportManger implements ITestListener {
 	private static Map<String, ExtentTest> classTestMap = new ConcurrentHashMap<>();
 
 	String repName;
-	
+	private static boolean reportOpened = false; // Flag to open report only once
+
 	public synchronized ExtentReports getExtentReports()
 	{
 		if (extent == null) {
             String timestamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-            String repName = "Test-Report-" + timestamp + ".html";
+            repName = "Test-Report-" + timestamp + ".html";
             ExtentSparkReporter sparkReporter = new ExtentSparkReporter(".\\Reports\\" + repName);
             sparkReporter.config().setDocumentTitle("OrangeHRM Automation Report");
             sparkReporter.config().setReportName("Functional Testing");
@@ -107,8 +110,22 @@ public class ExtendReportManger implements ITestListener {
 	{
 		 if (extent != null) {
 	            extent.flush(); // flush only once
+	            
+	            if (!reportOpened) {
+	                reportOpened = true;
+	            
+		            String pathofExtentReport = System.getProperty("user.dir")+ "\\Reports\\"+ repName;
+		            File extentReport = new File(pathofExtentReport);
+		            
+		            try {
+		            	Desktop.getDesktop().browse(extentReport.toURI());
+		            	
+		            }
+		            catch(IOException e){
+		            	e.printStackTrace();
+		            }
 	        }
-		
+		 }
 	}
 }
 

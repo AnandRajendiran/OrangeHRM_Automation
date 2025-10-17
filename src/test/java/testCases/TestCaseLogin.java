@@ -34,6 +34,8 @@ public class TestCaseLogin extends BaseClass{
 	@Test(priority = 2)
 	public void login_With_InValid_Credential_in_Password()
 	{
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT_TIMEOUT));
+
 		LoginPage LP = new LoginPage(driver);
 		LP.Username("Admin");
 		LP.Password("admin1234");
