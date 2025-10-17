@@ -7,14 +7,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageObjects.Homepage;
 import pageObjects.LoginPage;
 import pageObjects.ResetPasswordPage;
 
-@Listeners(utilities.ExtendReportManger.class)
 public class TestCaseLogin extends BaseClass{
 	
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));

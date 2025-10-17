@@ -1,7 +1,6 @@
 package testCases;
 
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageObjects.Homepage;
@@ -9,7 +8,6 @@ import pageObjects.LoginPage;
 import pageObjects.PIMPage;
 import pageObjects.ProfilePage;
 
-@Listeners(utilities.ExtendReportManger.class)
 public class TestCaseProfile extends BaseClass{
 	
 	@BeforeMethod						// i want to use beforeclass annotation if i have multiple Testcases.

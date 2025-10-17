@@ -1,320 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="2" skipped="1">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-17T15:37:49 IST" name="OrangeHRM_ParallelSuite" finished-at="2025-10-17T15:38:43 IST" duration-ms="54317">
+  <suite started-at="2025-10-17T17:27:03 IST" name="OrangeHRM_ParallelSuite" finished-at="2025-10-17T17:29:06 IST" duration-ms="122999">
     <groups>
     </groups>
-    <test started-at="2025-10-17T15:37:49 IST" name="ProfileTests" finished-at="2025-10-17T15:38:23 IST" duration-ms="33525">
-      <class name="testCases.TestCaseProfile">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCaseProfile@5be46f9d]" started-at="2025-10-17T15:37:49 IST" name="setup" finished-at="2025-10-17T15:37:58 IST" duration-ms="8917" status="PASS">
+    <test started-at="2025-10-17T17:27:03 IST" name="LoginTests" finished-at="2025-10-17T17:27:18 IST" duration-ms="14805">
+      <class name="testCases.TestCaseLogin">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T17:27:03 IST" name="setup" finished-at="2025-10-17T17:27:08 IST" duration-ms="4790" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="Beforemethod()[pri:0, instance:testCases.TestCaseProfile@5be46f9d]" started-at="2025-10-17T15:37:58 IST" name="Beforemethod" finished-at="2025-10-17T15:38:23 IST" duration-ms="24364" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[normalize-space()='PIM']' (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[normalize-space()='PIM']' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pageObjects.Homepage.Validate_PIMSection(Homepage.java:73)
-at testCases.TestCaseProfile.Beforemethod(TestCaseProfile.java:23)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[normalize-space()='PIM']"}
-  (Session info: chrome=141.0.7390.56)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ff6e7632fe4372bac3503e31f5d91c9f, findElement {value=//span[normalize-space()='PIM'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.56, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\Anand\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53995}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53995/devtoo..., se:cdpVersion: 141.0.7390.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ff6e7632fe4372bac3503e31f5d91c9f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 26 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="login_With_Valid_Creadtial()[pri:1, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T17:27:08 IST" name="login_With_Valid_Creadtial" finished-at="2025-10-17T17:27:12 IST" duration-ms="3694" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Beforemethod -->
-        <test-method signature="ProfilePage()[pri:0, instance:testCases.TestCaseProfile@5be46f9d]" started-at="2025-10-17T15:38:23 IST" name="ProfilePage" finished-at="2025-10-17T15:38:23 IST" duration-ms="1" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[normalize-space()='PIM']' (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //span[normalize-space()='PIM']' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pageObjects.Homepage.Validate_PIMSection(Homepage.java:73)
-at testCases.TestCaseProfile.Beforemethod(TestCaseProfile.java:23)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[normalize-space()='PIM']"}
-  (Session info: chrome=141.0.7390.56)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ff6e7632fe4372bac3503e31f5d91c9f, findElement {value=//span[normalize-space()='PIM'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.56, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\Anand\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53995}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53995/devtoo..., se:cdpVersion: 141.0.7390.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ff6e7632fe4372bac3503e31f5d91c9f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 26 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        </test-method> <!-- login_With_Valid_Creadtial -->
+        <test-method signature="login_With_InValid_Credential_in_Password()[pri:2, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T17:27:12 IST" name="login_With_InValid_Credential_in_Password" finished-at="2025-10-17T17:27:13 IST" duration-ms="1954" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProfilePage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCaseProfile@5be46f9d]" started-at="2025-10-17T15:38:23 IST" name="teardown" finished-at="2025-10-17T15:38:23 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- login_With_InValid_Credential_in_Password -->
+        <test-method signature="login_With_InValid_Credential_in_username()[pri:3, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T17:27:13 IST" name="login_With_InValid_Credential_in_username" finished-at="2025-10-17T17:27:15 IST" duration-ms="1280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_With_InValid_Credential_in_username -->
+        <test-method signature="BrandLogo()[pri:5, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T17:27:15 IST" name="BrandLogo" finished-at="2025-10-17T17:27:15 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrandLogo -->
+        <test-method signature="ForgotPassword()[pri:6, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T17:27:15 IST" name="ForgotPassword" finished-at="2025-10-17T17:27:16 IST" duration-ms="1239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgotPassword -->
+        <test-method signature="Resetpassword()[pri:7, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T17:27:16 IST" name="Resetpassword" finished-at="2025-10-17T17:27:17 IST" duration-ms="1207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Resetpassword -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCaseLogin@768fc0f2]" started-at="2025-10-17T17:27:17 IST" name="teardown" finished-at="2025-10-17T17:27:18 IST" duration-ms="276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testCases.TestCaseProfile -->
-    </test> <!-- ProfileTests -->
-    <test started-at="2025-10-17T15:37:49 IST" name="PIMTests" finished-at="2025-10-17T15:38:43 IST" duration-ms="54317">
-      <class name="testCases.TestCasePIM">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCasePIM@1339e7aa]" started-at="2025-10-17T15:37:49 IST" name="setup" finished-at="2025-10-17T15:37:58 IST" duration-ms="8912" status="PASS">
+      </class> <!-- testCases.TestCaseLogin -->
+    </test> <!-- LoginTests -->
+    <test started-at="2025-10-17T17:27:18 IST" name="HomepageTests" finished-at="2025-10-17T17:28:12 IST" duration-ms="54106">
+      <class name="testCases.TestCaseHomepage">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCaseHomepage@1984b1f]" started-at="2025-10-17T17:27:18 IST" name="setup" finished-at="2025-10-17T17:27:21 IST" duration-ms="3058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="AddEmployee()[pri:0, instance:testCases.TestCasePIM@1339e7aa]" started-at="2025-10-17T15:37:58 IST" name="AddEmployee" finished-at="2025-10-17T15:38:02 IST" duration-ms="3602" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: chrome=141.0.7390.56)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ff6e7632fe4372bac3503e31f5d91c9f, clickElement {id=f.00FE77C48F44AB2C6AE9F1D78EF7CF48.d.BB2AEA8EE732894968D6F7826D89BC04.e.12}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.56, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\Anand\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53995}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53995/devtoo..., se:cdpVersion: 141.0.7390.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ff6e7632fe4372bac3503e31f5d91c9f)] -> xpath: //button[@type='submit']]
-Session ID: ff6e7632fe4372bac3503e31f5d91c9f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=141.0.7390.56)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ff6e7632fe4372bac3503e31f5d91c9f, clickElement {id=f.00FE77C48F44AB2C6AE9F1D78EF7CF48.d.BB2AEA8EE732894968D6F7826D89BC04.e.12}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.56, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\Anand\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53995}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53995/devtoo..., se:cdpVersion: 141.0.7390.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ff6e7632fe4372bac3503e31f5d91c9f)] -> xpath: //button[@type='submit']]
-Session ID: ff6e7632fe4372bac3503e31f5d91c9f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-at pageObjects.LoginPage.LoginClick(LoginPage.java:39)
-at testCases.TestCasePIM.AddEmployee(TestCasePIM.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method signature="HomeScreenProfile()[pri:1, instance:testCases.TestCaseHomepage@1984b1f]" started-at="2025-10-17T17:27:21 IST" name="HomeScreenProfile" finished-at="2025-10-17T17:27:31 IST" duration-ms="10434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeScreenProfile -->
+        <test-method signature="validattionOfSearchbox()[pri:2, instance:testCases.TestCaseHomepage@1984b1f]" started-at="2025-10-17T17:27:31 IST" name="validattionOfSearchbox" finished-at="2025-10-17T17:28:12 IST" duration-ms="40337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validattionOfSearchbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCaseHomepage@1984b1f]" started-at="2025-10-17T17:28:12 IST" name="teardown" finished-at="2025-10-17T17:28:12 IST" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TestCaseHomepage -->
+    </test> <!-- HomepageTests -->
+    <test started-at="2025-10-17T17:28:12 IST" name="PIMTests" finished-at="2025-10-17T17:28:33 IST" duration-ms="20694">
+      <class name="testCases.TestCasePIM">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCasePIM@3403e2ac]" started-at="2025-10-17T17:28:12 IST" name="setup" finished-at="2025-10-17T17:28:16 IST" duration-ms="3505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AddEmployee()[pri:0, instance:testCases.TestCasePIM@3403e2ac]" started-at="2025-10-17T17:28:16 IST" name="AddEmployee" finished-at="2025-10-17T17:28:23 IST" duration-ms="7932" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddEmployee -->
-        <test-method signature="DeleteEmployeeRecord()[pri:2, instance:testCases.TestCasePIM@1339e7aa]" started-at="2025-10-17T15:38:12 IST" name="DeleteEmployeeRecord" finished-at="2025-10-17T15:38:43 IST" duration-ms="30521" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='oxd-topbar-body-nav-tab-item' and text() = 'Employee List']' (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[@class='oxd-topbar-body-nav-tab-item' and text() = 'Employee List']' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pageObjects.PIMPage.Click_EmployeeListSection(PIMPage.java:60)
-at testCases.TestCasePIM.DeleteEmployeeRecord(TestCasePIM.java:54)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='oxd-topbar-body-nav-tab-item' and text() = 'Employee List']"}
-  (Session info: chrome=141.0.7390.56)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ff6e7632fe4372bac3503e31f5d91c9f, findElement {value=//a[@class='oxd-topbar-body-nav-tab-item' and text() = 'Employee List'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.56, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\Anand\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53995}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53995/devtoo..., se:cdpVersion: 141.0.7390.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ff6e7632fe4372bac3503e31f5d91c9f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 22 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="DeleteEmployeeRecord()[pri:2, instance:testCases.TestCasePIM@3403e2ac]" started-at="2025-10-17T17:28:23 IST" name="DeleteEmployeeRecord" finished-at="2025-10-17T17:28:32 IST" duration-ms="9003" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteEmployeeRecord -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCasePIM@1339e7aa]" started-at="2025-10-17T15:38:43 IST" name="teardown" finished-at="2025-10-17T15:38:43 IST" duration-ms="474" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCasePIM@3403e2ac]" started-at="2025-10-17T17:28:32 IST" name="teardown" finished-at="2025-10-17T17:28:33 IST" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TestCasePIM -->
     </test> <!-- PIMTests -->
+    <test started-at="2025-10-17T17:28:33 IST" name="ProfileTests" finished-at="2025-10-17T17:29:06 IST" duration-ms="32990">
+      <class name="testCases.TestCaseProfile">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TestCaseProfile@49c66ade]" started-at="2025-10-17T17:28:33 IST" name="setup" finished-at="2025-10-17T17:28:36 IST" duration-ms="3532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="Beforemethod()[pri:0, instance:testCases.TestCaseProfile@49c66ade]" started-at="2025-10-17T17:28:36 IST" name="Beforemethod" finished-at="2025-10-17T17:28:45 IST" duration-ms="8491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Beforemethod -->
+        <test-method signature="ProfilePage()[pri:0, instance:testCases.TestCaseProfile@49c66ade]" started-at="2025-10-17T17:28:45 IST" name="ProfilePage" finished-at="2025-10-17T17:29:06 IST" duration-ms="20735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProfilePage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TestCaseProfile@49c66ade]" started-at="2025-10-17T17:29:06 IST" name="teardown" finished-at="2025-10-17T17:29:06 IST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TestCaseProfile -->
+    </test> <!-- ProfileTests -->
   </suite> <!-- OrangeHRM_ParallelSuite -->
 </testng-results>

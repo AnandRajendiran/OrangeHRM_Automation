@@ -1,13 +1,11 @@
 package testCases;
 
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageObjects.Homepage;
 import pageObjects.LoginPage;
 import pageObjects.PIMPage;
 
-@Listeners(utilities.ExtendReportManger.class)
 public class TestCasePIM extends BaseClass{
 	
 	String ID;
