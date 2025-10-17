@@ -16,13 +16,13 @@ public class TestCasePIM extends BaseClass{
 	@Test
 	public void AddEmployee() throws InterruptedException
 	{
-		LoginPage LP = new LoginPage(driver);
+		LoginPage LP = new LoginPage(getDriver());
 		LP.Username("Admin");
 		LP.Password("admin123");
 		LP.LoginClick();
-		Homepage HP =new Homepage(driver);
+		Homepage HP =new Homepage(getDriver());
 		HP.Validate_PIMSection();	
-		PIMPage PP = new PIMPage(driver);
+		PIMPage PP = new PIMPage(getDriver());
 		PP.ClickAddRecord();
 		name = PP.FirstName("anand");
 		PP.MiddleName("dude");
@@ -36,7 +36,7 @@ public class TestCasePIM extends BaseClass{
 
 	public void SearchEmployee() throws InterruptedException
 	{
-		PIMPage PP = new PIMPage(driver);
+		PIMPage PP = new PIMPage(getDriver());
 		Thread.sleep(3000);
 		PP.Click_EmployeeListSection();
 		PP.SearchWithEmployeeName(name);
@@ -50,7 +50,7 @@ public class TestCasePIM extends BaseClass{
 	@Test(priority=2)
 	public void DeleteEmployeeRecord() throws InterruptedException
 	{
-		PIMPage PP = new PIMPage(driver);
+		PIMPage PP = new PIMPage(getDriver());
 		PP.Click_EmployeeListSection();
 		Thread.sleep(2000);
 		PP.DeleteRecord(ID);

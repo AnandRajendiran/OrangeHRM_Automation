@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TestCaseProfile">
+      <class name="testCases.TestCasePIM">
         <methods>
-          <include name="Beforemethod"/>
-          <include name="ProfilePage"/>
           <include name="setup"/>
+          <include name="DeleteEmployeeRecord"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- testCases.TestCaseProfile -->
+      </class> <!-- testCases.TestCasePIM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

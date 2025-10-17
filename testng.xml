@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Suite">
+<suite name="OrangeHRM_ParallelSuite" parallel="classes" thread-count="3">
 
-	<listeners>
-    	<listener class-name="utilities.ExtendReportManger"/>
-	</listeners>
-	
-  <test thread-count="5" parallel="tests" name="Test">
-    <classes>
-      <class name="testCases.TestCasePIM"/>
-      <class name="testCases.TestCaseProfile"/>
-      <class name="testCases.TestCaseLogin"/>
-      <class name="testCases.TestCaseHomepage"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+    <!-- Run all test classes in parallel -->
+    <test name="ParallelTestRun">
+        <classes>
+            <class name="testCases.TestCaseLogin" />
+            <class name="testCases.TestCaseHomepage" />
+            <class name="testCases.TestCasePIM" />
+            <!-- <class name="testCases.TestCaseProfile" /> Uncomment if ready -->
+        </classes>
+    </test>
+
+</suite>

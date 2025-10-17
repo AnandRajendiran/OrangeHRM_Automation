@@ -27,7 +27,7 @@ public class PIMPageLocators {
 	@FindBy(xpath = "//button[normalize-space()='Cancel']")  //Locator in ADD Employee section
 	public WebElement Cancelbtn;
 	
-	@FindBy(xpath = "///a[contains(.,'Employee List')]")  //Locator in PIM Page
+	@FindBy(xpath = "//li[@class='oxd-topbar-body-nav-tab --visited']//following::a[1]")  //Locator in PIM Page
 	public WebElement Employeelist;
 	
 	@FindBy(xpath ="(//input[@class='oxd-input oxd-input--active'])[2]")  //Locator in ADD Employee section

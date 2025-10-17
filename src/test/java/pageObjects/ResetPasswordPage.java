@@ -29,6 +29,9 @@ public class ResetPasswordPage extends Basepage
 	@FindBy(xpath ="//button[normalize-space()='Reset Password']")
 	WebElement Reset;
 	
+	public WebElement headerElement() {
+	    return Header;
+	}
 	public void Header()
 	{
 		Assert.assertTrue(Header.isDisplayed(), "❌ Header 'Reset Password' is not displayed!");
@@ -47,9 +50,12 @@ public class ResetPasswordPage extends Basepage
 		username.sendKeys(name);
 	}
 	
+	public WebElement cancelButton() {
+	    return Cancel;
+	}
 	public void Cancel()
 	{
-		Cancel.click();
+		cancelButton().click();
 	}
 	
 	public void Reset()

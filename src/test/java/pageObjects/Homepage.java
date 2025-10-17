@@ -2,6 +2,7 @@ package pageObjects;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
@@ -44,6 +45,10 @@ public class Homepage extends Basepage {
 		loc.ChangePassword.click();
 	}
 	
+	public WebElement searchwait()
+	{
+		return loc.Search;
+	}
 	public void Search(String SectionName) throws InterruptedException
 	{
 		loc.Search.click();
